@@ -3,7 +3,7 @@
 Este proyecto es una tienda en línea que muestra una selección de productos destacados utilizando Astro y Tailwind CSS.
 
 ## Vista Previa
-[!Preview](src/assets/preview.png)
+[!](src/assets/preview.png)
 
 
 ## Instalación
