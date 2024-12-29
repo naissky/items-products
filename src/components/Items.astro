@@ -1,0 +1,22 @@
+---
+import CardItem from "./CardItem.astro";
+import { getCollection } from "astro:content";
+
+const items = await getCollection("products");
+
+console.log(items);
+---
+
+<div class="grid grid-cols-9 gap-3 mt-5">
+  {
+    items.map((item) => (
+        <CardItem
+          title={item.data.title}
+          image={item.data.img}
+          isNew={item.data.date}
+          price={item.data.price}
+          key={item.id}        
+        />
+    ))
+  }
+</div>
